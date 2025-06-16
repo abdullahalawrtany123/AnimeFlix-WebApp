@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AnimeFlix</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #111133;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 1.8rem;
+      color: #ff4c60;
+      cursor: default;
+    }
+    button#loginBtn {
+      background: #ff4c60;
+      border: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button#loginBtn:hover {
+      background: #ff1f39;
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+      padding: 2rem 1rem;
+      flex: 1;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #ff4c60;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+    .media-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+      gap: 1rem;
+    }
+    .media-item {
+      background: #222244;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(255, 76, 96, 0.3);
+      cursor: pointer;
+      transition: transform 0.25s ease;
+    }
+    .media-item:hover {
+      transform: scale(1.05);
+    }
+    .media-item img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+    .media-item .title {
+      padding: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #ff4c60;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    footer {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: #111133;
+      color: #7777aa;
+      text-align: center;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AnimeFlix</h1>
+    <button id="loginBtn">تسجيل الدخول</button>
+  </header>
+  <main> <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AnimeFlix</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #111133;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 1.8rem;
+      color: #ff4c60;
+    }
+    button#loginBtn {
+      background: #ff4c60;
+      border: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button#loginBtn:hover {
+      background: #ff1f39;
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+      padding: 2rem 1rem;
+      flex: 1;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #ff4c60;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+    .media-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+      gap: 1rem;
+    }
+    .media-item {
+      background: #222244;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(255, 76, 96, 0.3);
+      cursor: pointer;
+      transition: transform 0.25s ease;
+    }
+    .media-item:hover {
+      transform: scale(1.05);
+    }
+    .media-item img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+    .media-item .title {
+      padding: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #ff4c60;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    footer {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: #111133;
+      color: #7777aa;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    iframe {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AnimeFlix</
+
+    <section>
+      <h2 class="section-title">أنمي مميز</h2>
+      <div class="media-list" id="animeList">
+        <!-- أنمي يتم تحميله بواسطة JS -->
+      </div>
+    </section>
+    <section style="margin-top: 3rem;">
+      <h2 class="section-title">أفلام</h2>
+      <div class="media-list" id="movieList">
+        <!-- أفلام يتم تحميلها بواسطة JS -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 AnimeFlix - جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    const isLoggedIn = { value: false };
+    const loginBtn = document.getElementById('loginBtn');
+
+    loginBtn.onclick = () => {
+      isLoggedIn.value = !isLoggedIn.value;
+      loginBtn.textContent = isLoggedIn.value ? 'تسجيل الخروج' : 'تسجيل الدخول';
+      alert(isLoggedIn.value ? 'مرحباً بك!' : 'تم تسجيل الخروج');
+    };
+
+    const sampleAnime = [
+      { title: "هجوم العمالقة", img: "https://i.imgur.com/8QyR0bw.jpg" },
+      { title: "ناروتو", img: "https://i.imgur.com/5yVUCBL.jpg" },
+      { title: "ون بيس", img: "https://i.imgur.com/jMwvp5A.jpg" },
+      { title: "ديث نوت", img: "https://i.imgur.com/NTh5wlR.jpg" }
+    ];
+
+    const sampleMovies = [
+      { title: "Inception", img: "https://i.imgur.com/JtZxPaf.jpg" },
+      { title: "Interstellar", img: "https://i.imgur.com/HtW2eBu.jpg" },
+      { title: "The Matrix", img: "https://i.imgur.com/1dZPEA3.jpg" },
+      { title: "Your Name", img: "https://i.imgur.com/fcGvYUD.jpg" }
+    ];
+
+    function loadMedia(listId, items) {
+      const container = document.getElementById(listId);
+      container.innerHTML = '';
+      items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'media-item';
+        div.innerHTML = `
+          <img src="${item.img}" alt="${item.title}" />
+          <div class="title">${item.title}</div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    loadMedia('animeList', sampleAnime);
+    loadMedia('movieList', sampleMovies);
+  </script>
+</body>
+</html>
